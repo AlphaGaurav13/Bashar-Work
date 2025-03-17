@@ -67,7 +67,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
             <!-- Hero Section -->
             <section class="hero-section">
                 <div class="hero-content">
-                    <h1>Welcome <?php echo   $_SESSION['username']; ?> to ExoEra</h1>
+                    <h1>Welcome <?php echo   $_SESSION['email']; ?> to ExoEra</h1>
                     <p>Your gateway to the entertainment industry. Showcase your talent, find auditions, and connect with professionals.</p>
                     <div class="hero-buttons">
                         <button class="btn primary">Get Started</button>
@@ -97,7 +97,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                     <div class="profile-summary">
                         <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Profile">
                         <div>
-                            <h4><?php echo $_SESSION['username']; ?></h4>
+                            <h4><?php echo $_SESSION['email']; ?></h4>
                             <p>Actor & Director</p>
                         </div>
                     </div>
