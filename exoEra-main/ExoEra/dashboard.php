@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
+  header("location: /ClientWork/ExoEra/exoEra-main/ExoEra/login.php");
+
+  exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    
     <div class="app-container">
         <!-- Header -->
         <header>
@@ -57,7 +67,7 @@
             <!-- Hero Section -->
             <section class="hero-section">
                 <div class="hero-content">
-                    <h1>Discover & Connect with Talent</h1>
+                    <h1>Welcome <?php echo   $_SESSION['username']; ?> to ExoEra</h1>
                     <p>Your gateway to the entertainment industry. Showcase your talent, find auditions, and connect with professionals.</p>
                     <div class="hero-buttons">
                         <button class="btn primary">Get Started</button>
@@ -85,9 +95,9 @@
                 </div>
                 <div class="dashboard-content">
                     <div class="profile-summary">
-                        <img src="/placeholder.svg?height=80&width=80" alt="Profile">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Profile">
                         <div>
-                            <h4>John Doe</h4>
+                            <h4><?php echo $_SESSION['username']; ?></h4>
                             <p>Actor & Director</p>
                         </div>
                     </div>
