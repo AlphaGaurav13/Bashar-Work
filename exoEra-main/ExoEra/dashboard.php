@@ -117,7 +117,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                         
                     </div>
                     <div class="quick-actions">
-                        <a href="./Dashboard/portfolio.html"><button><i class="fas fa-edit"></i> Edit Profile</button></a>
+                        <a href="./Dashboard/portfolio.php"><button><i class="fas fa-edit"></i> Edit Profile</button></a>
                         <a href="./Dashboard/uploadReel.html"><button><i class="fas fa-video"></i> Upload Reel</button></a>
                         <a href="./Dashboard/Notification.html"><button><i class="fas fa-bell"></i> Notifications</button></a>
                         <a href="./Dashboard/skills.html"><button><i class="fas fa-lightbulb"></i> Skills</button></a>
